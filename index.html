@@ -6,19 +6,33 @@
   <title>Animales amenazados en Punilla</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <header class="hero">
     <div class="overlay">
+
       <h1>Animales nativos amenazados en el Valle de Punilla</h1>
-      <p>
-        Provincia de Córdoba, Argentina
-      </p>
+
+      <!-- Campo de búsqueda -->
+      <label for="search-input">
+        <input 
+          id="search-input" 
+          type="text" 
+          placeholder="Buscar animal..."
+        >
+      </label>
+
+      <p>Provincia de Córdoba, Argentina</p>
+
     </div>
   </header>
 
   <main class="contenedor">
+
     <section class="intro">
       <h2>¿Por qué es importante cuidarlos?</h2>
+
       <p>
         El Valle de Punilla forma parte de un ambiente serrano con gran biodiversidad.
         La pérdida de bosque nativo, los incendios forestales, la urbanización y la presión humana
@@ -26,34 +40,58 @@
       </p>
     </section>
 
+
     <section class="tarjetas">
-      <article class="card">
+
+      <!-- Cada animal tiene un data-animal con su nombre -->
+
+      <article data-animal="Condor andino" class="card">
+
         <h3>Cóndor andino</h3>
+
         <p>
           Es una de las aves más emblemáticas de Córdoba. Necesita grandes áreas naturales
           y ambientes bien conservados para sobrevivir.
         </p>
+
       </article>
 
-      <article class="card">
+
+      <article data-animal="Oso Melero" class="card">
+
+        <img 
+          src="https://www.google.com/imgres?q=hormiguero%20oso%20melero%20bellingham&imgurl=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FGDwUnqYXwAAO2W2.jpg&imgrefurl=https%3A%2F%2Fx.com%2FMrOFFSIDER%2Fstatus%2F1746293619156275700&docid=jPFEL4nmEqBSmM&tbnid=K7ccoN_C4jQL4M&vet=12ahUKEwjVxI72_bGWAxXOLbkGHdVUO4EQnPAOegQIKBAB..i&w=800&h=1000&hcb=2&ved=2ahUKEwjVxI72_bGWAxXOLbkGHdVUO4EQnPAOegQIKBAB" 
+          alt="Oso Melero"
+        >
+
         <h3>El Oso Melero</h3>
+
         <p>
           El Oso Melero (Tamandua tetradactyla) en el Valle de Punilla es un mamífero arborícola,
           pariente del oso hormiguero, que habita selvas y bosques.
         </p>
+
       </article>
 
-      <article class="card">
+
+      <article data-animal="Puma" class="card">
+
         <h3>Puma</h3>
+
         <p>
           Aunque todavía habita sectores serranos, sufre la fragmentación del ambiente
           y los conflictos con actividades humanas.
         </p>
+
       </article>
+
     </section>
 
+
     <section class="amenazas">
+
       <h2>Principales amenazas</h2>
+
       <ul>
         <li>Incendios forestales</li>
         <li>Pérdida de bosque nativo</li>
@@ -61,19 +99,35 @@
         <li>Caza y tráfico ilegal</li>
         <li>Contaminación y alteración de cursos de agua</li>
       </ul>
+
     </section>
 
+
     <section class="accion">
+
       <h2>¿Qué podemos hacer?</h2>
+
       <p>
         Cuidar el monte nativo, no capturar animales silvestres, no prender fuego,
         respetar áreas protegidas y difundir información confiable.
       </p>
+
     </section>
+
   </main>
 
+
   <footer>
-    <p>Proyecto escolar simple en HTML y CSS - Valle de Punilla, Córdoba</p>
+
+    <p>
+      Proyecto escolar simple en HTML y CSS - Valle de Punilla, Córdoba
+    </p>
+
   </footer>
+
+
+  <!-- Conectamos el archivo JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>
